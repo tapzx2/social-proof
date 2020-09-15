@@ -1,2 +1,4 @@
 # social-proof
- from Frontend Mentor
+ Assignment from [Frontend Mentor](https://www.frontendmentor.io/)
+ 
+ View it live.
