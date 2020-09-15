@@ -1,0 +1,356 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 400, 500, 700
+
+*/
+
+/* --------------------------- */
+/* PAGE STYLES */
+/* --------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 13px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+
+    margin:0 40px;
+    background-image:
+      url(images/bg-pattern-top-desktop.svg),
+      url(images/bg-pattern-bottom-desktop.svg);
+    background-position:
+      top left,
+      bottom right;
+    background-repeat: no-repeat;
+    
+}
+
+
+/* --------------------------- */
+/* INTRO SECTION */
+/* --------------------------- */
+
+.desktop-header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    max-width:1110px;
+    margin: 0 auto;
+
+    margin-top:127px;
+    margin-bottom: 72px;
+    
+}
+
+/* HEADER */
+
+header{
+    width:445px;
+
+}
+
+header h2 {
+    font-size:48px;
+    line-height: 48px;
+    letter-spacing: -1.71px;
+    color: hsl(300, 43%, 22%);
+    text-align: left;
+    height: 154px;
+}
+
+header p {
+    font-size: 15px;
+    line-height: 25px;
+    word-spacing: -.5px;
+    color: #927B91;
+    text-align: left;
+    height: 74px;
+}
+
+.text-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+/* RATINGS */
+
+
+.desktop-rating{
+    width: 540px;
+    height: 200px;
+    margin-top:14px;
+    
+}
+
+.rating{
+    background-color:hsl(300, 24%, 96%);
+    color:hsl(300, 43%, 22%);
+    border-radius: 8px;
+    height: 56px;
+    width: 445px;
+
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.rating:not(:last-child){
+    margin-bottom: 15px;
+}
+.stars{
+    display:flex;
+    width: 116.55px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+/* --------------------------- */
+/* REVIEWS */
+/* --------------------------- */
+
+.desktop-reviews{
+    display:flex;
+    flex-direction: row;
+    max-width:1110px;
+    min-height: 266px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.review{
+    height: 234px;
+    max-width: 350px;
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    padding: 40px 32px 32px 32px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.center-item{
+    margin-top: 15.5px;
+}
+
+.bottom-item{
+    margin-top: 31px;
+}
+
+.card {
+    display: flex;
+    height: 40px;
+    width: 160px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.review img{
+    border-radius: 50%;
+    width:40px;
+}
+
+.person {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.verified{
+    color: hsl(333, 80%, 67%);
+}
+
+.quote{
+    line-height: 22px;
+    letter-spacing: -.23px;
+    max-width: 286px;
+}
+
+
+
+@media only screen and (max-width: 1150px) and (min-width: 297px){
+
+/* --------------------------- */
+/* PAGE STYLES */
+/* --------------------------- */
+
+    body{
+        padding-top: 80px;
+        padding-bottom: 99px;
+
+        background-image:
+          url(images/bg-pattern-top-mobile.svg),
+          url(images/bg-pattern-bottom-mobile.svg);
+        background-position:
+          top center,
+          bottom center;
+        background-repeat: no-repeat;
+        background-size:
+          contain,
+          100%;
+    }
+
+    .block{
+        max-width: 337px;
+        margin: 0 auto;
+        margin-bottom:40px;
+    }
+
+    /* --------------------------- */
+    /* INTRO SECTION */
+    /* --------------------------- */
+    
+    /* HEADER */
+    
+    .desktop-header{
+        display:block;
+        margin-top:0px;
+        margin-bottom: 0px;
+    }
+
+    header h2 {
+        font-size:32px;
+        line-height: 32px;
+        letter-spacing: -1.14px;
+        text-align: center;
+        margin-bottom: 18px;
+        height: auto;
+    }
+
+    header p{
+        text-align: center;
+        height: auto;
+    }
+
+    .text-area{
+        display:block;
+    }
+
+    /* RATINGS */
+
+    .rating:not(:last-child){
+        margin-bottom: auto;
+    }
+
+    .rating{
+        width: auto;
+        margin:5px;
+    }
+
+    .left, .right{
+        float: none;
+    }
+
+
+
+    .desktop-rating{
+        height: auto;
+    }
+
+    /* --------------------------- */
+    /* REVIEWS */
+    /* --------------------------- */
+
+    .desktop-reviews{
+        display: block;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .review{
+        height: 248px;
+    }
+
+    .center-item{
+        margin-top: auto;
+    }
+
+    .bottom-item{
+        margin-top: auto;
+    }
+
+
+    .card {
+        display: flex;
+        height: 40px;
+        width: 160px;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .review img{
+        border-radius: 50%;
+        width:40px;
+    }
+
+    .person {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .verified{
+        color: hsl(333, 80%, 67%);
+    }
+
+    .quote{
+        line-height: 22px;
+        letter-spacing: -.23px;
+        width: 260px;
+    }
+
+
+}
